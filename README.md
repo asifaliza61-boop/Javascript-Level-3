@@ -1,6 +1,6 @@
 # Javascript-Level-3
 ## 🚀 Tic Tac Toe Game (HTML, CSS & JavaScript)
-<img src="https://github.com/user-attachments/assets/2c32d011-98ae-483f-b611-7be1bb005074" width="300" />
+<img src="https://github.com/user-attachments/assets/c9356665-e1d2-49c5-9f42-73268bb16cee" width="300" />
 
 
 **🎮 Two Player Mode.**
