@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #dbeafe, #f8fafc);
+  font-family: Arial, sans-serif;
+}
+
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f46e5;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.title{
+  animation: fadeDown 0.8s ease;
+}
+
+@keyframes fadeDown{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vmin;
+}
+
+
+.box{
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  font-size: 8vmin;
+  font-weight: bold;
+  color: #4f46e5; 
+  background: white;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+
+.box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.4);
+  cursor: pointer;
+}
+
+#start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  min-height: 50px;
+
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+  #msg{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+
+#resetBtn{
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0;
+  background: #4f46e5;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  animation: pulse 1.5s infinite;
+}
+
+
+#resetBtn:hover{
+  animation: none;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+  }
+}
